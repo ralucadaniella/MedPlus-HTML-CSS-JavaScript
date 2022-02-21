@@ -1,0 +1,71 @@
+@media only screen and (max-width: 1240px) {
+    #container {
+        width: 60vw;
+    }
+
+    .heartbeatloader {
+        top: 16rem;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+   .root-container {
+       width: 80vw;
+   }
+
+   #about {
+       grid-template-columns: 1fr;
+       grid-template-areas: 
+                'title'
+                'header-text'
+                'button'
+                'image';
+   }
+
+   .title {
+       font-size: 2.2rem;
+   }
+
+   #features {
+       margin: 4rem 0;
+       grid-template-columns: 1fr;
+       grid-template-areas: 
+                'patient'
+                'diagnostic'
+                'UI'
+                'data';
+       text-align: center;
+   }
+
+   #dark-mode {
+       height: 50vh;
+       margin-top: 8rem;
+       grid-template-rows: 1fr 1fr 2fr;
+   }
+
+   #container {
+       width: 100%;
+   }
+
+   #divider::before, #divider::after {
+    width: 4rem; 
+    }
+
+    .heartbeatloader {
+        top: 5rem;
+        width: 16vmin;
+        height: 16vmin;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .heartbeatloader {
+        top: 3rem;
+        width: 20vmin;
+        height: 20vmin;
+    }
+}

@@ -1,0 +1,226 @@
+html{
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(240, 240, 229);
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.root-container {
+    width: 50vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.logo {
+    justify-self: start;
+    color: #EB3349;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#nav-right {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+}
+
+#nav-right a{
+    text-decoration: none;
+}
+
+.login {
+    background-color: #484D68;
+    color: white;
+    width: 7rem;
+    height: 2.2rem;
+    font-size: 1.2rem;
+    border: 0;
+    cursor: pointer;
+    border-radius: .2rem;
+    transition: all .5s ease-in;
+    outline: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login:hover {
+    background-color: #6b6e91;
+}
+
+#user-icon {
+    font-size: 1.2rem;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'title .'
+                        'header-text .'
+                        'button .'
+                        'image image';
+    gap: 1rem;
+    padding-top: 4rem;
+    color: #343957;
+}
+
+.title {
+    grid-area: title;
+    margin-bottom: 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.header-text {
+    grid-area: header-text;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#btn-try {
+    grid-area: button;
+    width: 14rem;
+    height: 2.5rem;
+    background-color: #77C08F;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 1.6rem;
+    border-radius: .2rem;
+    transition: all .4s ease-in-out;
+    outline: none;
+}
+
+#btn-try:hover {
+    transform: scale(1.1);
+}
+
+#first-img {
+    grid-area: image;
+    width: 100%;
+    margin: 4rem 0;
+}
+
+#features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        'patient diagnostic'
+        'UI data' ;
+    margin: 12rem 0;
+    font-size: 1.2rem;
+    gap: 4rem;
+    color: #343957;
+}
+
+#features p {
+    font-size: 500;
+    line-height: 1.6;
+}
+
+.fas {
+   font-size: 2.6rem;
+}
+
+.fa-user-injured {
+    color: #FFC976;
+}
+
+.fa-user-md {
+    color: #77C08F;
+}
+
+.fa-paint-brush {
+    color: #FF5979;
+}
+
+.fa-cloud {
+    color: #90DBD7;
+}
+
+#patient {
+    grid-area: patient;
+}
+
+#diagnostic {
+    grid-area: diagnostic;
+}
+
+#UI {
+    grid-area: UI;
+}
+
+#data {
+    grid-area: data;
+}
+
+#dark-mode {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        'title'
+        'descriere'
+        'image';
+    margin-top: 16rem;
+    margin-bottom: 6rem;
+    height: 80vh;
+    width: 100vw;
+}
+
+#dark-mode > h2 {
+    grid-area: title;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 0;
+    height: 20px;
+
+}
+
+#dark-mode > p {
+    grid-area: descriere;
+    color: #AEADAB;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#dark-mode > img {
+    grid-area: image;
+    justify-self: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+}
+
+footer h4 {
+    color: #EB3349;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+
+
+
+
+

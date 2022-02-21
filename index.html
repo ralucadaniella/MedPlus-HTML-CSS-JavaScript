@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedPlus</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="switch-theme.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+</head>
+<body>
+    <div class="root-container">
+    <nav>
+        <h3 class="logo">MedPlus</h3>
+        <div id="nav-right">
+            <div class="switch">
+                <input type="checkbox" id="themeCheckbox" class="switch-input">
+                <label for="themeCheckbox" class="switch-label">Switch</label>
+            </div>
+            <a href="login.html"><button class="login"><i id="user-icon" class="fas fa-user"></i>Log in</button></a>
+        </div>
+    </nav>
+    <section id="about">
+        <h1 class="title">MedPlus</h1>
+        <p class="header-text">Your brand new personal manager that brings together features like health monitoring, diagnostics detection and much more.</p>
+        <button id="btn-try">Try it now</button>
+        <img src="light-page.png" alt="#" id="first-img">
+    </section>
+    <section id="features">
+        <div id="patient">
+            <i class="fas fa-user-injured"></i>
+            <h2>Created for patients</h2>
+            <p>With the newest technologies and resources, MedPlus offers a powerful experience in the health diagnostic detection process. MedPlus is by default a friendly patient environment.</p>
+        </div>
+
+        <div id="diagnostic">
+            <i class="fas fa-user-md"></i>
+            <h2>Diagnostic support</h2>
+            <p>MedPlus offers support for doctors in order to take care of their patients by giving them a diagnostic or even suggest treatments and prescriptions.</p>
+        </div>
+
+        <div id="UI">
+            <i class="fas fa-paint-brush"></i>
+            <h2>A modern UI</h2>
+            <p>Because a modern UI is a trend nowadays, MedPlus has a responsive design and supports all major device sizes.</p>
+        </div>
+
+        <div id="data">
+            <i class="fas fa-cloud"></i>
+            <h2>Sync health data</h2>
+            <p>Syncing data from your Google Fit App is easy then ever. Once you created an account your data will be synced every day.</p>
+        </div>
+    </section>
+    </div>
+    <section id="dark-mode">
+        <h2>Go dark</h2>
+        <p>with our built in dark mode</p>
+        <img src="dark-feature.png" alt="img" width="40%" height="auto">
+    </section>
+    <footer>
+        <h4>MedPlus</h4>
+        <span style="font-size: .9rem; color: #6b6e91;">@2021 MedPlus.All rights reserved</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
